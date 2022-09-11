@@ -79,4 +79,111 @@
 
     <li>
       Ссылка-изображение:
-      <a href="http://kubsu.ru/"> <img src="https://www.kubsu.ru/sites/all/themes/portal_kubsu/logo.png" width = "80" height = "64" alt="Официальный сайт КубГУ"></a>
+      <a href="http://kubsu.ru/"> <img src="https://www.kubsu.ru/sites/all/themes/portal_kubsu/logo.png" width = "150" height = "150" alt="Официальный сайт КубГУ"></a>
+    </li>
+
+    <li>
+      Ссылка из прямоугольных и круглых областей картинки
+      <p>
+        <img src="https://www.kubsu.ru/sites/all/themes/portal_kubsu/logo.png" usemap="#image-map" alt="500">
+        
+        <map name="image-map">
+          <area shape="rect" coords = "16,16,48,48" href = "https://kubsu.ru" alt="КубГУ" >
+          <area shape="circle" coords = "25,30,40" href = "https://kubsu.ru/node/30310" alt = "КубГУ 100 лет">
+      </map>
+      </p>
+        
+    </li>
+
+    <li>
+      <a href="1.html">Относительная ссылка на страницу в текущем каталоге</a>
+    </li>
+     
+    <li>
+      <a href="about/2.html"> Относительная ссылка на страницу в каталоге about</a>
+    </li>
+
+    <li>
+      <a href="../3.html"> Относительная ссылка на страницу в каталоге уровнем выше текущего </a>
+    </li>
+
+    <li>
+      <a href="../../4.html"> Относительная ссылка на страницу в каталоге двумя уровнями выше </a>
+    </li> 
+
+    <li> 
+      <a href="/index.html"> Сокращенная ссылка на главную </a>
+    </li>
+    
+    <li>
+      <a href="/about/1"> Сокращенная ссылка на внутреннюю </a>
+    </li>
+  </ol>
+  <hr>
+
+  <h2 id="form"> Форма:</h2>
+
+  <form action="reply.html" method="POST">
+  <label>
+    Имя:<br />
+    <input name="field-name" placeholder="ФИО" />
+  </label><br />
+
+  <label>
+    Email:<br />
+    <input name="field-email" type="email" placeholder="Введите вашу почту" />
+  </label><br />
+
+  <label>
+    Дата рождения:<br />
+    <input name="field-date" type="date" />
+  </label><br />
+  
+  Пол:<br />
+  <label><input type="radio" name="radio-group-gender" value="input-gender-male" />
+    Мужской
+  </label>
+  <label><input type="radio" name="radio-group-gender" value="input-gender-female" />
+    Женский
+  </label><br />
+
+  Кол-во конечностей:<br />
+  <label><input type="radio" name="radio-group-limbs" value="input-limbs-1" />
+   1
+  </label>
+  <label><input type="radio" name="radio-group-limbs" value="input-limbs-2" />
+   2
+  </label>
+  <label><input type="radio" name="radio-group-limbs" value="input-limbs-3" />
+    3
+  </label>
+  <label><input type="radio" name="radio-group-limbs" value="input-limbs-4" />
+    4
+  </label>
+  <label><input type="radio" name="radio-group-limbs" value="input-limbs-X" />
+    Другое
+  </label><br />
+
+  <label>
+    Сверхспособности:
+    <br />
+    <select name="field-spower" multiple="multiple">
+      <option value="spower-immortality">Бессметрие</option>
+      <option value="spower-no-walls">Прохождение сквозь стены</option>
+      <option value="spower-levitation">Левитация</option>
+    </select>
+  </label><br />
+
+  <label>
+    Биография:<br />
+    <textarea name="field-biography" placeholder="Минимум 100 слов"></textarea>
+  </label><br />      
+
+  <label><input type="checkbox" name="contract-checked" />
+    С контрактом ознакомлен (а)</label><br />
+
+  <input type="submit" value="Отправить" />
+</form>
+
+</body>
+</html>
