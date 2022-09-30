@@ -35,7 +35,8 @@ int main()
     for (int n = 100; n <= 1000; n += 100) {
         int* a = new int[n];
         for (int i = 0; i < n; i++) {
-            a[i] = i;
+            a[i] = i; // min
+            /*a[i] = n - i //max*/
             /*cout << a[i] << " ";*/
         }
         //cout << endl;
