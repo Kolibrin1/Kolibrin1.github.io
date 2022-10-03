@@ -2,29 +2,32 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <link rel="stylesheet" href="task2.css">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Task №2</title>
+  <link rel="stylesheet" href="task2.css">
 </head>
-<body>  
+<body>
+  <h1 id = "top"></h1>
   <header>
-      <div class="shapka">
-          <div><img src="https://logos-download.com/wp-content/uploads/2018/04/Dallas_Mavericks_logo_horse.png" alt="Логотип компании" id="main/logoimg" width="300" height="300"></div>
-          <div><p>Задание №2</p></div>
+      <div class="header">
+        <div class = "container">
+        <img src="https://logos-download.com/wp-content/uploads/2018/04/Dallas_Mavericks_logo_horse.png" alt="Логотип" height = "100px" weight="100px">
+        <b id="bheader"> Задание №2</b>
+        </div>
       </div>
   </header> 
-  <div class="navigation">
-  <nav>
-      <ul>
-          <li><a href="#start">Основное </a></li>
-          <li><a href="#table">Таблица</a></li>
-          <li><a href="#form">Форма</a></li>
-      </ul>
-  </nav>
+  <div class="container">
+    <div class = "nav">
+    <nav>
+        <a href="#start">Основное </a>
+        <a href="#table">Таблица</a>
+        <a href="#form">Форма</a>
+    </nav>
   </div>
-  <div class="web1">
-  <h2><a id="start">Гиперссылки</a></h2>
+  <hr>
+  <div class="links">
+  <h2><a id="links">Гиперссылки</a></h2>
   <ol>
     <li>
       <a href="http://kubsu.ru">Абсолютная гиперссылка на главную страницу сайта КубГУ</a> 
@@ -58,18 +61,12 @@
       <a href="https://example.com?user=username&pass=password"> Ссылка с двумя параметрами в URL </a> 
     </li>
     
-    <li>
-      <ul>
-        <li>
-          <a href="index.html" title="Главная"> Главная</a>
-        </li>
-        <li>
-          <a href="#top" title="Начало"> Начало страницы </a>
-        </li>
-        <li>
-          <a href="#form" title="Форма"> Форма </a>
-        </li>
-      </ul>
+    <li> Навигация
+      <nav>
+          <a href="task2.html" title="Главная">Главная</a>
+          <a href="#top" title="Начало">Начало страницы</a>
+          <a href="#form" title="Форма">Форма</a>
+      </nav>
     </li>
 
     <li>
@@ -137,8 +134,9 @@
     </li>
   </ol>
     </div>
+    <hr>
 <div class="table">
-    <h2 id="table">Таблица</h2>
+    <h3 id="table">Таблица</h3>
     <table>
         <tr>
             <th>Номер 1</th>
@@ -157,75 +155,73 @@
         </tr>
     </table>
 </div>
-    <hr>
-
-  <h2 id="form"> Форма:</h2>
-
-  <form action="reply.html" method="POST">
-  <label>
-    Имя:<br />
-    <input name="field-name" placeholder="ФИО" />
-  </label><br />
-
-  <label>
-    Email:<br />
-    <input name="field-email" type="email" placeholder="Введите вашу почту" />
-  </label><br />
-
-  <label>
-    Дата рождения:<br />
-    <input name="field-date" type="date" />
-  </label><br />
   
-  Пол:<br />
-  <label><input type="radio" name="radio-group-gender" value="input-gender-male" />
-    Мужской
-  </label>
-  <label><input type="radio" name="radio-group-gender" value="input-gender-female" />
-    Женский
-  </label><br />
-
-  Кол-во конечностей:<br />
-  <label><input type="radio" name="radio-group-limbs" value="input-limbs-1" />
-   1
-  </label>
-  <label><input type="radio" name="radio-group-limbs" value="input-limbs-2" />
-   2
-  </label>
-  <label><input type="radio" name="radio-group-limbs" value="input-limbs-3" />
-    3
-  </label>
-  <label><input type="radio" name="radio-group-limbs" value="input-limbs-4" />
-    4
-  </label>
-  <label><input type="radio" name="radio-group-limbs" value="input-limbs-X" />
-    Другое
-  </label><br />
-
-  <label>
-    Сверхспособности:
-    <br />
-    <select name="field-spower" multiple="multiple">
-      <option value="spower-immortality">Бессметрие</option>
-      <option value="spower-no-walls">Прохождение сквозь стены</option>
-      <option value="spower-levitation">Левитация</option>
-    </select>
-  </label><br />
-
-  <label>
-    Биография:<br />
-    <textarea name="field-biography" placeholder="Минимум 100 слов"></textarea>
-  </label><br />      
-
-  <label><input type="checkbox" name="contract-checked" />
-    С контрактом ознакомлен (а)</label><br />
-
-  <input type="submit" value="Отправить" />
+  <div class="form">
+<h3 id = "form">Форма </h3>
+<form action="/" id="form">
+    <label>
+        Имя:<br/>
+        <input name="field-name" placeholder="ФИО" />
+      </label><br/>
+      <label>
+        Email:<br/>
+        <input name="field-email" type="email" placeholder="Введите вашу почту" />
+      </label><br/>
+      <label>
+        Дата рождения:<br />
+        <input name="field-date" type="date" />
+      </label><br/>
+      Пол:<br />
+      <label><input type="radio" name="radio-group-gender" value="input-gender-male" />
+        Мужской
+      </label>
+      <label><input type="radio" name="radio-group-gender" value="input-gender-female" />
+        Женский
+      </label><br />
+      Кол-во конечностей:<br />
+      <label><input type="radio" name="radio-group-limbs" value="input-limbs-1" />
+       1
+      </label>
+      <label><input type="radio" name="radio-group-limbs" value="input-limbs-2" />
+       2
+      </label>
+      <label><input type="radio" name="radio-group-limbs" value="input-limbs-3" />
+        3
+      </label>
+      <label><input type="radio" name="radio-group-limbs" value="input-limbs-4" />
+        4
+      </label>
+      <label><input type="radio" name="radio-group-limbs" value="input-limbs-X" />
+        Другое
+      </label><br />
+      <label>
+        Сверхспособности:
+        <br />
+        <select name="field-spower" multiple="multiple">
+          <option value="spower-immortality">Бессметрие</option>
+          <option value="spower-no-walls">Прохождение сквозь стены</option>
+          <option value="spower-levitation">Левитация</option>
+        </select>
+      </label><br />
+      <label>
+        Биография:<br />
+        <textarea name="field-biography" placeholder="Минимум 100 слов"></textarea>
+      </label><br />  
+      <label><input type="checkbox" name="contract-checked" />
+        С контрактом ознакомлен(а)</label><br />
+        <input type="submit" value="Отправить" />
 </form>
 </div>
-<footer class="footer">
-  <p class="footer-content">(c) Колибрин Георгий 25/1 </p>
+</div> 
+<footer>
+  <div class="footer">
+    <div class="container">
+      <h2 id="end">
+        Колибрин Г.О. | группа 25/1
+      </h2>
+    </div>
+  </div>
 </footer>
+
 </body>
 </html>
-
