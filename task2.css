@@ -58,11 +58,3 @@ tr:nth-child(odd) {
     border-color: #000d5c;
     border-image: initial;
 }
-a{
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-}
-th, .nech td{
-    color: rgb(200, 200, 200);
-    background-color: rgb(16,67,118,1);
-}
