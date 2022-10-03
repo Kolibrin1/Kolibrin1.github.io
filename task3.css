@@ -1,0 +1,155 @@
+
+@media (max-width: 960px) {
+    body {
+        font-family: 'Times New Roman', 'San Francisco', 'Open Sans', Arial, Geneva, Verdana, sans-serif;
+        font-size: 20px;
+        background-image: url(wall.jpg);
+    }
+        
+    .header, .nav, .links, .table, .form, .footer {
+        background-color: rgb(128,255,109,1);
+        padding: 0.5em;
+    }
+
+    .container {
+        width: 100%;
+        margin: 0.5em auto;
+        padding-bottom: 0.3em;
+    }
+    #bheader {
+        margin: 0 2em;
+    }
+
+    .nav {
+        flex-direction: column;
+        display: flex;
+    }
+
+    .navlink{
+        margin: 0.1em auto;
+        padding: 0 5px;
+        width: fit-content;
+        height: 32px;
+        background-color:rgb(128,255,109,1);     
+        border: 1px #000d5c;
+    }
+
+    .navlink a{
+        vertical-align: middle;
+        text-decoration: none;
+        font-weight: bold;
+        color: #000d5c;
+    }
+
+    li {
+        margin-bottom: 0.6em;
+    }
+
+    #main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    label {
+        font-size: large;
+    }
+
+    input, select, textarea {
+        font-size:20px;
+        size: 10em;
+        padding: 5px 10px 5px 10px;
+        margin-bottom: 1    em;
+    }
+
+
+
+    #main .table {
+        order: 1;
+    }
+
+    #main .form {
+        order: 0;
+    }
+
+    b {
+        font-size: 28px;
+    }
+
+    table {
+        background-color: rgb(128,255,109,1);
+        border: 1px solid;
+        border-style: double;
+        border-color: #000d5c;
+        border-image: initial;
+    }
+
+    td{
+        padding: 6px 10px 6px 10px;
+        text-align: center;
+    }
+    tr:nth-child(odd) {
+        background-color: #57c113;
+        border-style: double;
+    }
+}
+
+@media (min-width: 960px) {
+    body {
+        font-family: 'Times New Roman', 'San Francisco', 'Open Sans', Arial, Geneva, Verdana, sans-serif;
+        font-size: 20px;
+        background-image: url(wall.jpg);
+    }
+        
+    .header, .nav, .links, .table, .form, .footer {
+        background-color: rgb(128,255,109,1);
+        padding: 0.2em;
+
+    }
+
+    .navlink{
+        margin: 0.1em auto;
+        padding: 0 5px;
+        width: fit-content;
+        height: 32px;
+        background-color:rgb(128,255,109,1);
+    }
+
+    .navlink a{
+        vertical-align: middle;
+        text-decoration: none;
+        font-weight: bold;
+    }
+    .container {
+        width: 100%;
+        margin: 0.5em auto;
+        padding-bottom: 0.1em;
+    }
+    #bheader {
+        margin: 0 2em;
+    }
+
+    .nav a{
+        margin-right:1em;
+    }
+
+    b {
+        font-size: 28px;
+    }
+
+    table {
+        background-color: rgb(128,255,109,1);
+        border: 1px solid;
+        border-style: double;
+        border-color: #000d5c;
+        border-image: initial;
+    }
+
+    td{
+        padding: 6px 10px 6px 10px;
+        text-align: center;
+    }
+
+    tr:nth-child(odd) {
+        background-color: #57c113;
+    }
+}
