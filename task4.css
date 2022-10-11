@@ -1,0 +1,47 @@
+.obj-fit{
+    object-fit: contain;
+    object-position: center;
+}
+
+
+@media (min-width:480px) {
+    body {
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: 20px;
+        background-image: url(wall.jpg);
+    }
+        
+    .header, .nav, .links, .table, .form, .footer {
+        background-color: rgb(16,67,118,1);
+        padding: 0.5em;
+        border-style: double;
+        border-color: #000d5c;
+        border-image: initial;
+    }
+    #logo_name {
+        margin: 0 2em;
+    }
+    .header_container{
+        margin:0 auto;
+        max-width: 960px;
+    }
+    .footer_container{
+        margin:0 auto;
+        max-width: 960px;
+    }
+    .container{
+        margin:0 auto;
+        max-width: 960px;
+        display: flex;
+        flex-direction: column;
+    }
+    .menu_list{
+        flex-direction: row;
+    }
+    table{
+        order: 4;
+    }
+    #form{
+        order:3;
+    }
+}
