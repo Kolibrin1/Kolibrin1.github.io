@@ -1,0 +1,40 @@
+body {
+    background-color: rgb(16,67,118,1);
+    
+
+}
+#unit_price{
+    width: 170px;
+    font-size: 13px;
+    padding: 6px 0 4px 10px;
+    border: 1px solid #ff3d3d;
+    background: #F6F6f6;
+    border-radius: 6px;
+}
+#count{
+    width: 170px;
+    font-size: 13px;
+    padding: 6px 0 4px 10px;
+    border: 1px solid #ff3d3d;
+    background: #F6F6f6;
+    border-radius: 6px;
+}
+#unit_price:focus{
+    outline:none;
+    border-color:#69ff44;
+  }
+#count:focus{
+    outline:none;
+    border-color:#69ff44;
+}
+#result{
+    color:white;
+}
+form{
+    border: thick double;
+    border-collapse: collapse;
+    margin:200px 200px 200px 200px;
+    padding: 10% 10% 10% 20%;
+    border-color: #000d5c;
+    flex-direction: row;
+}
