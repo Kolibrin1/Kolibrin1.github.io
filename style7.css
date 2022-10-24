@@ -1,0 +1,34 @@
+body{
+background-image: url(https://catherineasquithgallery.com/uploads/posts/2021-03/1614566106_53-p-belii-fon-vektor-58.jpg);
+}
+.photo{
+    width:180px;
+    height:180px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 10%;
+    border-radius: 15%;
+    margin: 0 auto;
+ }
+.slide {
+  text-align: center;
+}
+h2 {
+  padding: 10%;
+  color:black;
+  font-family: courier;
+}
+.rev_slider{
+  margin: 0 auto;
+  padding: 10px;
+  margin-top: 15%;
+  width: 95%;
+  height: 50vh;
+}
+.slick-dots li button:before{
+    font-size:15px;
+    background-color:#000;
+}
+
+
