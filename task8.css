@@ -1,0 +1,42 @@
+html, body {
+    background-image: url(wall.jpg);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    }
+    
+    #popup {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    pointer-events: none;
+    opacity: 0;
+    }
+    #mainForm{
+      display: none;
+      position: absolute;
+      top:50%;
+      left: 50%;
+      background-color: #75ffaf;
+      transform: translate(-50%, -50%);
+      border: 2px solid black;
+      padding: 1vw;
+    }
+    #btn{
+      width: 100px;
+      color: rgb(16,67,118,1);
+      position: absolute;
+      top:50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    
+    #frm{
+      padding: 2vw;
+    }
+    
+    #closeForm{
+    float: right;
+    }
